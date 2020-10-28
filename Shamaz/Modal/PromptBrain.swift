@@ -93,7 +93,7 @@ struct PromptBrain {
         case .years:
             
             let timeFrame = getTimeFrame(.years)
-            let prompt = pastTextYears.randomElement()! + String(timeFrame) + " year".makePlural(timeFrame) + " ago?"
+            let prompt = pastTextYears.randomElement()! + String(timeFrame) + " years ago?"
             return prompt
         
         default:
@@ -136,7 +136,7 @@ struct PromptBrain {
         case .years:
             
             let timeFrame = getTimeFrame(.years)
-            let prompt = futureTextYears.randomElement()! + String(timeFrame) + " year".makePlural(timeFrame) + " time?"
+            let prompt = futureTextYears.randomElement()! + String(timeFrame) + " years time?"
             
             return prompt
         
